@@ -1,0 +1,144 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --dark-grayish-navy: #151622;
+  --medium-light-blue: #8B94E9;
+  --grayish-blue: #b4b4c2;
+  --gray-90: #E5E5E5;
+  --gray-94: #F0F0F0;
+  --very-light-red: #FF878D;
+  --red: #C51010;
+  --black: #000000;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: var(--dark-grayish-navy);
+
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  color: var(--gray-94);
+
+  letter-spacing: 0.01em;
+
+  width: 80%;
+  
+  margin: auto;
+  margin-bottom: 10%;
+}
+
+.costumer-registration {
+  width: 100%;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+form fieldset {
+  border: 0.2px solid var(--very-light-red);
+}
+
+form fieldset + fieldset {
+  margin-top: 3.5rem;
+}
+
+form fieldset legend {
+  color: var(--very-light-red);
+
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.625rem;
+}
+
+fieldset .separator {
+  margin-bottom: 2rem;
+}
+
+form .input-wrapper{
+  margin: 1rem;
+}
+
+form .input-wrapper + .input-wrapper {
+  width: 50%;
+}
+
+label {
+  display: inline-block;
+
+  font-weight: 300;
+  color: var(--gray-90);
+
+  margin-bottom: 1rem;
+}
+
+input {
+  font-weight: 300;
+
+  background: var(--gray-90);
+
+  border: 1px solid var(--light-grayish-navy);
+  border-radius: .313rem;
+
+  margin-left: 1.5rem;
+  padding: 0.75rem 1.5rem;
+
+  width: 50%;
+
+  color: var(--black);
+}
+
+select {
+  font-weight: 300;
+
+  background: var(--gray-90);
+
+  border: 1px solid var(--light-grayish-navy);
+  border-radius: .313rem;
+
+  margin-left: 1.5rem;
+  padding: 0.75rem;
+
+  width: 30%;
+
+  color: var(--black);
+}
+
+::placeholder {
+  color: var(--grayish-blue);
+}
+
+button {
+  position: absolute;
+  padding: 10px 20px;
+  border-radius: .313rem;
+  color: var(--dark-grayish-navy);
+  font-size: 16px;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 20px;
+  letter-spacing: 4px
+}
+
+.update-data-button:hover {
+  color: var(--dark-grayish-navy);
+  border-radius: 5px;
+  box-shadow: 0 0 5px var(--medium-light-blue),
+              0 0 5px var(--medium-light-blue),
+              0 0 0px var(--medium-light-blue),
+              0 0 5px var(--medium-light-blue);
+}
+
+.cancel-update-data-button:hover {
+  color: var(--dark-grayish-navy);
+  border-radius: 5px;
+  box-shadow: 0 0 5px var(--red),
+              0 0 5px var(--red),
+              0 0 0px var(--red),
+              0 0 5px var(--red);
+}
